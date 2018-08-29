@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cg.quickcircle.TimeStatusView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/time_backgroud"
+    android:gravity="center" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@id/keyguard_status_view_face_palm"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TextClock
+                    android:id="@id/time_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="85.0dip"
+                    android:fontFamily="sans-serif-thin"
+                    android:format12Hour="@string/keyguard_widget_12_hours_format"
+                    android:format24Hour="@string/keyguard_widget_24_hours_format"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="78.0sp" />
+
+                <TextView
+                    android:id="@id/am_pm_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/time_view"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="165.0dip"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:shadowColor="@android:color/black"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@id/date_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="68.0dip"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15.0sp" />
+
+                <TextView
+                    android:id="@id/week_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="45.0dip"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textScaleX="1.2"
+                    android:textSize="15.0sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70.0dip"
+        android:background="@android:color/transparent" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:paddingLeft="57.0dip"
+            android:paddingTop="27.0dip" >
+
+            <ImageView
+                android:id="@id/phone_view"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/phone_incoming"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@id/sms_view"
+                android:layout_width="30.0dip"
+                android:layout_height="30.0dip"
+                android:layout_marginLeft="1.0dip"
+                android:layout_toRightOf="@id/phone_view"
+                android:background="@drawable/sms_incoming"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/battery_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="37.0dip"
+            android:gravity="center"
+            android:textColor="@color/color_848484"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</com.cg.quickcircle.TimeStatusView>

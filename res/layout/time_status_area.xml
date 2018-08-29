@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextClock android:textColor="@color/clock_white" android:gravity="center" android:id="@id/date_view" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/widget_label" />
+    <TextClock android:textColor="@color/clock_white" android:layout_gravity="top|center" android:id="@id/clock_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bottom_text_spacing_digital" android:baselineAligned="true" android:singleLine="true" android:format12Hour="@string/keyguard_widget_12_hours_format" android:format24Hour="@string/keyguard_widget_24_hours_format" style="@style/widget_big_thin" />
+</LinearLayout>

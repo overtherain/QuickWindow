@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:panel="http://schemas.android.com/apk/res/com.sprd.quickwindow">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:gravity="center" android:id="@id/camera_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <com.cg.quickcircle.camera.PicturePanel android:layout_gravity="right" android:id="@id/picturePanel" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true" panel:animationDuration="666" panel:position="right" panel:handle="@id/panelHandle" panel:content="@id/panelContent" panel:linearFlying="true" panel:weight="100.0%p" panel:openedHandle="@drawable/close_gallery_image" panel:closedHandle="@drawable/open_gallery_image">
+        <Button android:layout_gravity="center" android:id="@id/panelHandle" android:layout_width="26.0dip" android:layout_height="24.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" />
+        <com.cg.quickcircle.camera.PictureGallery android:id="@id/panelContent" android:tag="dddd" android:layout_width="wrap_content" android:layout_height="fill_parent" android:animationDuration="1" />
+    </com.cg.quickcircle.camera.PicturePanel>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/back_layout" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageButton android:gravity="center" android:id="@id/back_img" android:background="@drawable/camera_back_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>

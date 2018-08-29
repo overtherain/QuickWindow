@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/quick_window_bg" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/quick_window_pager"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:layout_gravity="center_horizontal|top"
+        android:focusable="true"
+        android:gravity="center"
+        android:overScrollMode="never"/>
+</FrameLayout>

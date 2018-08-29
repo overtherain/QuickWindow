@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/call_log_backgroud" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/title_layout" android:background="@drawable/setting_title_bg" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@android:color/white" android:gravity="center" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/user_profile" />
+    </LinearLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/back_layout" android:layout_below="@id/title_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginRight="30.0dip">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/user_profile_general_layout" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/color_cbcbcb" android:gravity="center" android:id="@id/user_profile_general_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/user_profile_general" android:singleLine="true" android:layout_alignParentLeft="true" />
+                        <View android:background="@color/color_999999" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.5dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/user_profile_general_box" />
+                        <RadioButton android:id="@id/user_profile_general_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/color_999999" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/user_profile_silent_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/user_profile_general_layout">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/color_cbcbcb" android:gravity="center" android:id="@id/user_profile_silent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/user_profile_silent" android:singleLine="true" android:layout_alignParentLeft="true" />
+                        <View android:background="@color/color_999999" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.5dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/user_profile_silent_box" />
+                        <RadioButton android:id="@id/user_profile_silent_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/color_999999" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/user_profile_meeting_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_below="@id/user_profile_silent_layout">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/color_cbcbcb" android:gravity="center" android:id="@id/user_profile_meeting_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/user_profile_meeting" android:singleLine="true" android:layout_alignParentLeft="true" />
+                        <View android:background="@color/color_999999" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.5dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/user_profile_meeting_box" />
+                        <RadioButton android:id="@id/user_profile_meeting_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/color_999999" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:id="@id/user_profile_outdoor_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_below="@id/user_profile_meeting_layout">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="3.0dip">
+                        <TextView android:textSize="18.0dip" android:textColor="@color/color_cbcbcb" android:gravity="center" android:id="@id/user_profile_outdoor_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/user_profile_outdoor" android:singleLine="true" android:layout_alignParentLeft="true" />
+                        <View android:background="@color/color_999999" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="0.5dip" android:layout_height="30.0dip" android:layout_marginRight="20.0dip" android:layout_toLeftOf="@id/user_profile_outdoor_box" />
+                        <RadioButton android:id="@id/user_profile_outdoor_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                    <View android:background="@color/color_999999" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="5.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center" android:id="@id/back_layout" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:gravity="center" android:id="@id/back_img" android:background="@drawable/back" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

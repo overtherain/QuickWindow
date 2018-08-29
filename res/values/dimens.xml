@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default clock parameters -->
+    <dimen name="top_text_spacing_digital">30dp</dimen>
+    <dimen name="bottom_text_spacing_digital">-18dp</dimen>
+    <dimen name="label_font_size">14dp</dimen>
+    <dimen name="widget_big_font_size">68dp</dimen>
+    <dimen name="big_font_size">120dp</dimen>
+    
+    <!--  SPRD: fix bug 255493, set am/pm lable size -->
+    <dimen name="bottom_text_size">18sp</dimen>
+    
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="circle_width">100.0dip</dimen>
+    <dimen name="circle_height">100.0dip</dimen>
+    <dimen name="widget_label_font_size">16.0dip</dimen>
+    
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <!-- Keyguard colors -->
+    <color name="keyguard_avatar_frame_color">#ffffffff</color>
+    <color name="keyguard_avatar_frame_shadow_color">#80000000</color>
+    <color name="keyguard_avatar_nick_color">#ffffffff</color>
+    <color name="keyguard_avatar_frame_pressed_color">#ff35b5e5</color>
+    <color name="kg_widget_pager_gradient">#ffffffff</color>
+
+    <!-- FaceLock -->
+    <color name="facelock_spotlight_mask">#CC000000</color>
+    
+    <!-- Missed Call -->
+    <color name="call_yellow">#ffffffdd</color>
+
+    <!-- Quick Window -->
+    <color name="quick_window_bg">#ff000000</color>
+    <color name="clock_bg">#fffe9a2e</color>
+    <color name="music_bg">#ff642efe</color>
+    <color name="transparent">@android:color/transparent</color>
+    <color name="clock_white">#ffffffff</color>
+    <color name="clock_gray">#80ffffff</color>
+    <color name="app_color">#ffe9ecf4</color>
+    <color name="black">#7f000000</color>
+    <color name="title_bg">#ff6b82ae</color>
+    <color name="main_bg">#ff717171</color>
+    <color name="call_log_title_bg">#ff53b000</color>
+    <color name="message_title_bg">#fffede00</color>
+    <color name="music_title_bg">#7f973bc4</color>
+    <color name="call_log_bottom_bg">#ffcccccc</color>
+    <color name="message_bottom_bg">#ffcccccc</color>
+    <color name="music_bottom_bg">#7f2c93f2</color>
+    <color name="setting_title_bg">#ff666666</color>
+    <color name="color_333333">#ff333333</color>
+    <color name="color_666666">#ff666666</color>
+    <color name="color_999999">#ff999999</color>
+    <color name="color_cbcbcb">#ffcbcbcb</color>
+    <color name="color_656565">#ff656565</color>
+    <color name="color_9B30ff">#ff9b30ff</color>
+    <color name="color_848484">#ff848484</color>
+    <color name="color_e0ce87">#ffe0ce87</color>
+    <color name="color_00ccff">#ff00ccff</color>
+    <color name="color_b2b2b2">#ffb2b2b2</color>
+    <color name="color_616161">#ff616161</color>
+</resources>

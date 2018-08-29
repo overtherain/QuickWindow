@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sprd.quickwindow" >
+
+    <uses-sdk android:minSdkVersion="17" android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" /> 
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"  />
+		<uses-permission android:name="android.permission.ACTION_CALL"  />
+		<uses-permission android:name="android.permission.ACTION_CALL_PRIVILEGED"  />
+		
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+       
+        <activity android:theme="@android:style/Theme.Holo.Wallpaper.NoTitleBar" android:name="MainActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:launchMode="singleInstance" android:screenOrientation="nosensor" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <provider 
+            android:name="QuickWindowProvider"
+            android:authorities="com.sprd.quickwindow.provider"
+            android:exported="true" >
+        </provider>
+        <service android:name=".QuickWindowService">
+            <intent-filter>
+                <action android:name="com.sprd.quickwindow.QuickWindowService.action" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

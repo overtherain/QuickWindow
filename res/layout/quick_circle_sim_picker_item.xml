@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <RelativeLayout
+        android:id="@id/title_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="30.0dip"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/call_via"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/color_00ccff" />
+
+        <ImageView
+            android:id="@id/back_image"
+            android:layout_width="12.0dip"
+            android:layout_height="12.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="7.0dip"
+            android:background="@drawable/call_via_dialog_back" />
+    </RelativeLayout>
+
+    <View
+        android:id="@id/line_one"
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_below="@id/title_layout"
+        android:background="@color/color_b2b2b2" />
+
+    <LinearLayout
+        android:id="@id/sim_one_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/line_one"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@id/sim_one_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="41.0dip" >
+
+            <ImageView
+                android:id="@id/sim_one_image"
+                android:layout_width="36.0dip"
+                android:layout_height="20.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="7.0dip"
+                android:background="@drawable/sim_light_blue" />
+
+            <LinearLayout
+                android:id="@id/sim1_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="58.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/sim_one_image"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/sim1_displayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sim_name_unkwon"
+                    android:textColor="@color/color_616161"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@id/sim1_phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sim_name_unkwon"
+                    android:textColor="@color/color_616161"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:id="@id/line_two"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dip"
+            android:layout_below="@id/sim_one_linear"
+            android:layout_marginLeft="10.0dip"
+            android:layout_marginRight="10.0dip"
+            android:background="@color/color_b2b2b2" />
+
+        <RelativeLayout
+            android:id="@id/sim_two_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="41.0dip"
+            android:layout_below="@id/line_two" >
+
+            <ImageView
+                android:id="@id/sim_two_image"
+                android:layout_width="36.0dip"
+                android:layout_height="20.0dip"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10.0dip"
+                android:layout_marginTop="7.0dip"
+                android:background="@drawable/sim_light_orange" />
+
+            <LinearLayout
+                android:id="@id/sim2_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="58.0dip"
+                android:layout_marginLeft="10.0dip"
+                android:layout_toRightOf="@id/sim_two_image"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@id/sim2_displayName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/color_616161"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@id/sim2_phoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sim_name_unkwon"
+                    android:textColor="@color/color_616161"
+                    android:textSize="12.0sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

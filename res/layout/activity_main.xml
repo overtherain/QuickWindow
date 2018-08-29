@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_backgroud"
+    android:gravity="top|center"
+    android:paddingTop="35.0dip" >
+
+    <RelativeLayout
+        android:layout_width="260.0dip"
+        android:layout_height="260.0dip"
+        android:gravity="center" >
+
+        <FrameLayout
+            android:id="@id/quick_circle_fragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/main_circle_backgroud" />
+    </RelativeLayout>
+
+</RelativeLayout>
